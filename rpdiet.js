@@ -1,5 +1,4 @@
 var body = JSON.parse($response.body);
-
 if (body.activeSubscriptions) {
     body.activeSubscriptions = [
         {
@@ -10,7 +9,7 @@ if (body.activeSubscriptions) {
             "referralRequired": false,
             "isPromo": false,
             "startsAt": "2024-11-15T07:00:00.000Z",
-            "endsAt": "2025-11-15T07:00:00.000Z",
+            "endsAt": "2099-11-15T07:00:00.000Z",
             "createdAt": "2019-11-15T04:00:43.644Z",
             "updatedAt": "2023-04-26T20:06:52.036Z",
             "deletedAt": null,
@@ -52,13 +51,13 @@ if (body.activeSubscriptions) {
                             "promoBillingPeriod": null,
                             "promoLength": null,
                             "startsAt": "2024-11-15T07:00:00.000Z",
-                            "endsAt": "2025-11-15T07:00:00.000Z",
+                            "endsAt": "2099-11-15T07:00:00.000Z",
                             "createdAt": "2023-04-26T20:03:59.258Z",
                             "updatedAt": "2023-04-26T20:03:59.258Z",
                             "deletedAt": null,
                             "stripeCouponId": null,
                             "accessStartsAt": "2024-11-15T07:00:00.000Z",
-                            "accessEndsAt": "2025-11-15T07:00:00.000Z"
+                            "accessEndsAt": "2099-11-15T07:00:00.000Z"
                         }
                     ]
                 }
