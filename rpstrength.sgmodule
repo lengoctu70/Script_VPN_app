@@ -1,0 +1,17 @@
+#!name=RP Strength All Apps Unlock
+#!desc=Unlock RP Diet, RP Hypertrophy, RP Training Premium
+#!category=iApp
+#!author=lengoctu70
+
+[Script]
+# RP Diet & Training - User subscription check
+rp-user = type=http-response, pattern=^https?:\/\/(api|training)\.rpstrength\.com\/(api\/)?v?\d*\/?users\/me, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lengoctu70/Script_VPN_app/main/rpstrength.js, timeout=60
+
+# RP subscription endpoint
+rp-subscription = type=http-response, pattern=^https?:\/\/(api|training)\.rpstrength\.com\/(api\/)?v?\d*\/?subscriptions?, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lengoctu70/Script_VPN_app/main/rpstrength.js, timeout=60
+
+# RP entitlements/purchases
+rp-entitlement = type=http-response, pattern=^https?:\/\/(api|training)\.rpstrength\.com\/(api\/)?v?\d*\/?(entitlements?|purchases?|products?), requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lengoctu70/Script_VPN_app/main/rpstrength.js, timeout=60
+
+[MITM]
+hostname = %APPEND% api.rpstrength.com, training.rpstrength.com, *.rpstrength.com
