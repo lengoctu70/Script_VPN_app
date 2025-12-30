@@ -1,0 +1,12 @@
+#!name=RP Diet Unlock
+#!desc=Unlock RP Diet Premium Features
+#!category=Script
+#!author=Chocolatefluffy
+#!homepage=https://github.com/lengoctu70/Script_VPN_app
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness.png
+
+[MITM]
+hostname = %APPEND% api.rpstrength.com
+
+[Script]
+RP Diet = type=http-response, pattern=^https?:\/\/api\.rpstrength\.com\/user, script-path=https://raw.githubusercontent.com/lengoctu70/Script_VPN_app/main/rpdiet.js, requires-body=true, max-size=131072, timeout=20
