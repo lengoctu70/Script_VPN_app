@@ -1,0 +1,9 @@
+#!name=RP Strength Premium Unlock
+#!desc=Unlock Diet & Training Premium Features
+#!category=Premium Unlock
+
+[Script]
+rp-premium = type=http-response, pattern=^https:\/\/training\.rpstrength\.com\/api\/user\/subscriptions\?v=, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/lengoctu70/Script_VPN_app/main/rpstrength.js, timeout=60
+
+[MITM]
+hostname = %APPEND% training.rpstrength.com
