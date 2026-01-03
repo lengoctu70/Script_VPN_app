@@ -7,7 +7,7 @@
 
 [Script]
 # Modify TrainHeroic Athlete Pro Access Response
-trainheroic_pro = type=http-response, pattern=^https?:\/\/api\.trainheroic\.com\/v5\/athletePro\/access, script-path=trainheroic_pro.js, requires-body=true, max-size=0, timeout=30
+trainheroic_pro = type=http-response, pattern=^https?:\/\/api\.trainheroic\.com\/v5\/athletePro\/access, script-path=https://raw.githubusercontent.com/lengoctu70/Script_VPN_app/refs/heads/main/trainheroic_pro.js, requires-body=true, max-size=0, timeout=30
 
 [MITM]
 hostname = %APPEND% api.trainheroic.com
