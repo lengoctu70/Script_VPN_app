@@ -1,0 +1,13 @@
+#!name=TrainHeroic Pro Unlock
+#!desc=Mở khóa Athlete Pro cho TrainHeroic app
+#!author=Auto Script
+#!homepage=https://github.com
+#!icon=https://raw.githubusercontent.com/Orz-3/mini/master/Color/trainheroic.png
+#!category=App Unlock
+
+[Script]
+# Modify TrainHeroic Athlete Pro Access Response
+trainheroic_pro = type=http-response, pattern=^https?:\/\/api\.trainheroic\.com\/v5\/athletePro\/access, script-path=trainheroic_pro.js, requires-body=true, max-size=0, timeout=30
+
+[MITM]
+hostname = %APPEND% api.trainheroic.com
